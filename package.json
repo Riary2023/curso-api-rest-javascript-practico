@@ -1,0 +1,19 @@
+{
+  "name": "curso-api-rest-javascript-practico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Riary2023/curso-api-rest-javascript-practico.git"
+  },
+  "author": "Alejandro Ramirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riary2023/curso-api-rest-javascript-practico/issues"
+  },
+  "homepage": "https://github.com/Riary2023/curso-api-rest-javascript-practico#readme"
+}
