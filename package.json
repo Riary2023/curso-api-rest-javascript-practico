@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Riary2023/curso-api-rest-javascript-practico/issues"
   },
-  "homepage": "https://github.com/Riary2023/curso-api-rest-javascript-practico#readme"
+  "homepage": "https://github.com/Riary2023/curso-api-rest-javascript-practico#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
 }
