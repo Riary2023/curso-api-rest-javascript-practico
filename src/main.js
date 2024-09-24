@@ -25,6 +25,8 @@ function likedMoviesList() {
 function likeMovie(movie) {
     // movie.id
     const likedMovies = likedMoviesList();
+
+    console.log(likedMovies);
   
     if (likedMovies[movie.id]) {
       likedMovies[movie.id] = undefined;
@@ -73,9 +75,12 @@ function createMovies(movies, container,{
 
         const movieBtn = document.createElement('button'); 
         movieBtn.classList.add('movie-btn');
+        likedMoviesList()[movie.id] && movieBtn.classList.add('movie-btn--liked')
         movieBtn.addEventListener('click', () => {
             movieBtn.classList.toggle('movie-btn--liked')
             likeMovie(movie);
+            getLikedMovies();
+            getTrendingMoviesPreview();
         });
 
 
@@ -276,3 +281,13 @@ async function getRelatedMoviesById(id) {
 
     createMovies(relatedMovies, relatedMoviesContainer);
 };
+
+function getLikedMovies() {
+    const likedMovies = likedMoviesList();
+    const moviesArray = Object.values(likedMovies); 
+
+    createMovies(moviesArray, likedMoviesListArticle, { lazyLoad: true,  clean: true });
+           
+
+    console.log(likedMovies)
+}
